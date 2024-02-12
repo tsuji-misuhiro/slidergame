@@ -9,6 +9,7 @@ public class Playercontroller : MonoBehaviour
     private float coefficient = 0.985f;
     private float stopValue = 2.5f;
     private Animator anim;
+    private int score;
     [Header("à⁄ìÆë¨ìx")]
     public float moveSpeed;
 
@@ -57,7 +58,7 @@ public class Playercontroller : MonoBehaviour
     {
         float x = Input.GetAxis("Horizontal");
         rb.velocity = new Vector3(x * moveSpeed, rb.velocity.y, rb.velocity.z);
-        Debug.Log(rb.velocity);
+        ///Debug.Log(rb.velocity);
 
     }
 
@@ -135,6 +136,12 @@ public class Playercontroller : MonoBehaviour
     {
         isGrounded = Physics.Linecast(transform.position, transform.position - transform.up * 0.3f, groundLayer);
         Debug.DrawLine(transform.position, transform.position - transform.up * 0.3f, Color.red);
+    }
+
+    public void AddScore(int amount)
+    {
+        score += amount;
+        Debug.Log("åªç›ÇÃìæì_ :" + score);
     }
 }
 
