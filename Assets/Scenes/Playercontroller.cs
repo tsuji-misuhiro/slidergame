@@ -28,6 +28,9 @@ public class Playercontroller : MonoBehaviour
     [SerializeField,Header("Î–Ê‚Æ‚ÌÚ’n”»’è")]
     private bool isGrounded;
 
+    [SerializeField]
+    private UIManager uiManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -142,6 +145,7 @@ public class Playercontroller : MonoBehaviour
     {
         score += amount;
         Debug.Log("Œ»İ‚Ì“¾“_ :" + score);
+        uiManager.UpdateDisplayScore(score);
     }
 }
 
