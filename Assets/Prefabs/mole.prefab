@@ -5037,6 +5037,7 @@ GameObject:
   - component: {fileID: 4100920693366925100}
   - component: {fileID: 3355972788795472119}
   - component: {fileID: 8336278453846484491}
+  - component: {fileID: 5580219156101361186}
   m_Layer: 0
   m_Name: mole
   m_TagString: Untagged
@@ -5145,6 +5146,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 137acc928556b5041a0b8e470c96e956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5580219156101361186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5399372026959355257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e89013738960e4699319df2b527aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5510999509356210087
