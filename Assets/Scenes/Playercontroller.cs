@@ -16,6 +16,9 @@ public class Playercontroller : MonoBehaviour
     [Header("加速速度")]
     public float accelerationSpeed;
 
+    [Header("最高スピード")]
+    public float maxSpeed;
+
     [Header("ジャンプ力")]
     public float jumpPower;
 
@@ -55,6 +58,11 @@ public class Playercontroller : MonoBehaviour
         Move();
         
         Accelerate();
+
+        if(rb.velocity.magnitude > maxSpeed)
+        {
+            rb.velocity = rb.velocity.normalized * maxSpeed;
+        }
     }
     
     private void Move()
@@ -80,7 +88,6 @@ public class Playercontroller : MonoBehaviour
         {
             Jump();
         }
-
     }
 
     private void Brake()

@@ -14,7 +14,7 @@ public class FrostEffector : MonoBehaviour
         {
             isApplyEffected = true;
             Camera.main.gameObject.GetComponent<FrostEffectController>().UpdateFrostAmount(duration);
-            Destroy(gameObject, 1.0f);
+            Destroy(gameObject, 1.5f);
         }
     }
 }
